@@ -221,3 +221,5 @@ Notes:
 - ROC curve: [reports/figures/roc_curve.png](./reports/figures/roc_curve.png)
 - Precision-recall curve: [reports/figures/precision_recall_curve.png](./reports/figures/precision_recall_curve.png)
 - Confusion matrix: [reports/figures/confusion_matrix.png](./reports/figures/confusion_matrix.png)
+
+Last verified deployment target: Google Cloud Run in `us-central1`.
