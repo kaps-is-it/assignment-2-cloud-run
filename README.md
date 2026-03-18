@@ -77,6 +77,44 @@ flowchart LR
     B --> I["/api/v1/admin/model"]
 ```
 
+## Live Deployment
+
+The current deployed Cloud Run version is publicly available here:
+
+- Base URL: [https://assignment-2-cloud-run-1095831070964.us-central1.run.app](https://assignment-2-cloud-run-1095831070964.us-central1.run.app)
+- Interactive API docs: [https://assignment-2-cloud-run-1095831070964.us-central1.run.app/docs](https://assignment-2-cloud-run-1095831070964.us-central1.run.app/docs)
+- Status endpoint: [https://assignment-2-cloud-run-1095831070964.us-central1.run.app/api/v1/status](https://assignment-2-cloud-run-1095831070964.us-central1.run.app/api/v1/status)
+- Metrics endpoint: [https://assignment-2-cloud-run-1095831070964.us-central1.run.app/api/v1/metrics](https://assignment-2-cloud-run-1095831070964.us-central1.run.app/api/v1/metrics)
+- Model metadata endpoint: [https://assignment-2-cloud-run-1095831070964.us-central1.run.app/api/v1/admin/model](https://assignment-2-cloud-run-1095831070964.us-central1.run.app/api/v1/admin/model)
+
+## How a New User Can Try the API
+
+This is the simplest usage flow for a first-time reviewer such as the professor:
+
+```mermaid
+flowchart TD
+    A["Open the live Cloud Run URL"] --> B["Open /docs"]
+    B --> C["Expand POST /api/v1/predict"]
+    C --> D["Click Try it out"]
+    D --> E["Paste the sample request JSON"]
+    E --> F["Click Execute"]
+    F --> G["Read bankruptcy_probability, risk_label, risk_band"]
+    G --> H["Open GET /api/v1/status"]
+    H --> I["Open GET /api/v1/metrics"]
+    I --> J["Open GET /api/v1/admin/model"]
+```
+
+Quick reviewer steps:
+
+1. Open the live docs page.
+2. Expand `POST /api/v1/predict`.
+3. Copy the sample payload from `artifacts/sample_request.json`.
+4. Paste it into the request body and click `Execute`.
+5. Review the returned prediction output.
+6. Open `GET /api/v1/status` to confirm the service is healthy.
+7. Open `GET /api/v1/metrics` to inspect runtime monitoring data.
+8. Open `GET /api/v1/admin/model` to inspect the deployed model metadata.
+
 ## Repository Layout
 
 ```text
