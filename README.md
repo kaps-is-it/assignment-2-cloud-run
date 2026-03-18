@@ -89,7 +89,6 @@ The current deployed Cloud Run version is publicly available here:
 
 ## How a New User Can Try the API
 
-This is the simplest usage flow for a first-time reviewer such as the professor:
 
 ```mermaid
 flowchart TD
