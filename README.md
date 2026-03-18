@@ -204,14 +204,6 @@ Notes:
 - Cloud Run scales from zero, which matches the request-volume assumptions for this assignment.
 - The deployment flow above follows Google Cloud's official guides for [building and pushing Docker images with Cloud Build](https://cloud.google.com/build/docs/build-push-docker-image) and [deploying container images to Cloud Run](https://cloud.google.com/run/docs/deploying).
 
-## Video Demo Checklist
-
-- Show the architecture diagram from this README.
-- Walk through `scripts/train_model.py` and explain dataset choice, model selection, and evaluation metrics.
-- Start the API and open `/docs`.
-- Run a prediction with `artifacts/sample_request.json`.
-- Show `/api/v1/status`, `/api/v1/metrics`, and `/api/v1/admin/model`.
-- Explain Docker packaging and the Cloud Run deployment commands.
 
 ## Deliverables in This Repo
 
